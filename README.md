@@ -7,6 +7,7 @@
 [![License](https://img.shields.io/github/license/Cellular-Semantics/clara-agent)](https://img.shields.io/github/license/Cellular-Semantics/clara-agent)
 
 **Repository:** <https://github.com/Cellular-Semantics/clara-agent/>
+
 **Documentation** <https://Cellular-Semantics.github.io/clara-agent/>
 
 **CLARA** (_CL Accuracy Reference Agent_) is an agentic validation pipeline designed to improve the quality and reliability of the [Cell Ontology (CL)](https://github.com/obophenotype/cell-ontology) by verifying that term-level assertions are supported by referenced literature.
