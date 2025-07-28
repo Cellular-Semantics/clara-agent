@@ -11,13 +11,14 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<4.0"
+python = ">=3.10,<4.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
 pyright = "^1.1.382"
 pre-commit = "^3.4.0"
 tox = "^4.11.1"
+pytest-cov = "^6.2.1"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.4.2"
