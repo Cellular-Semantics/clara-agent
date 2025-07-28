@@ -1,4 +1,4 @@
-# clara-agent
+## **CLARA: CL Accuracy Reference Agent**
 
 [![Release](https://img.shields.io/github/v/release/Cellular-Semantics/clara-agent)](https://img.shields.io/github/v/release/Cellular-Semantics/clara-agent)
 [![Build status](https://img.shields.io/github/actions/workflow/status/Cellular-Semantics/clara-agent/main.yml?branch=main)](https://github.com/Cellular-Semantics/clara-agent/actions/workflows/main.yml?query=branch%3Amain)
@@ -6,44 +6,22 @@
 [![Commit activity](https://img.shields.io/github/commit-activity/m/Cellular-Semantics/clara-agent)](https://img.shields.io/github/commit-activity/m/Cellular-Semantics/clara-agent)
 [![License](https://img.shields.io/github/license/Cellular-Semantics/clara-agent)](https://img.shields.io/github/license/Cellular-Semantics/clara-agent)
 
-CLARA is an agentic pipeline that verifies Cell Ontology term definitions against referenced literature to support accurate, reliable curation.
+**Repository:** <https://github.com/Cellular-Semantics/clara-agent/>
+**Documentation** <https://Cellular-Semantics.github.io/clara-agent/>
 
-- **Github repository**: <https://github.com/Cellular-Semantics/clara-agent/>
-- **Documentation** <https://Cellular-Semantics.github.io/clara-agent/>
+**CLARA** (_CL Accuracy Reference Agent_) is an agentic validation pipeline designed to improve the quality and reliability of the [Cell Ontology (CL)](https://github.com/obophenotype/cell-ontology) by verifying that term-level assertions are supported by referenced literature.
 
-## Getting started with your project
+The system retrieves relevant full-text references for CL terms and automatically checks whether both formal and textual definitions are substantiated. Built on top of [PaperQA2](https://arxiv.org/abs/2403.04304) (Skarlinski et al., 2024), the current prototype has demonstrated high accuracy in detecting hallucinations and identifying unsupported claims—making it a valuable tool for ontology curators.
 
-First, create a repository on GitHub with the same name as this project, and then run the following commands:
+### ✨ Features
 
-```bash
-git init -b main
-git add .
-git commit -m "init commit"
-git remote add origin git@github.com:Cellular-Semantics/clara-agent.git
-git push -u origin main
-```
+- Automated evidence validation for Cell Ontology term assertions
+- Uses LLM-based semantic search (PaperQA2) to retrieve and assess supporting literature
+- Integrates with GitHub Actions to run on pull requests, validating proposed terms and edits
+- Supports synonym-aware matching and confidence scoring
+- Designed to improve efficiency without sacrificing accuracy
 
-Finally, install the environment and the pre-commit hooks with
+### 📄 License
 
-```bash
-make install
-```
-
-You are now ready to start development on your project!
-The CI/CD pipeline will be triggered when you open a pull request, merge to main, or when you create a new release.
-
-To finalize the set-up for publishing to PyPI or Artifactory, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/publishing/#set-up-for-pypi).
-For activating the automatic documentation with MkDocs, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/mkdocs/#enabling-the-documentation-on-github).
-To enable the code coverage reports, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/codecov/).
-
-## Releasing a new version
-
-- Create an API Token on [PyPI](https://pypi.org/).
-- Add the API Token to your projects secrets with the name `PYPI_TOKEN` by visiting [this page](https://github.com/Cellular-Semantics/clara-agent/settings/secrets/actions/new).
-- Create a [new release](https://github.com/Cellular-Semantics/clara-agent/releases/new) on Github.
-- Create a new tag in the form `*.*.*`.
-- For more details, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/cicd/#how-to-trigger-a-release).
-
----
-
-Repository initiated with [fpgmaas/cookiecutter-poetry](https://github.com/fpgmaas/cookiecutter-poetry).
+This project is licensed under the **Apache License 2.0**.
+See the [LICENSE](https://github.com/Cellular-Semantics/clara-agent/blob/main/LICENSE) file for details.
