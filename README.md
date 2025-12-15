@@ -1,3 +1,14 @@
+> **⚠️ Project Relocated**
+>
+> Development of **CLARA** has moved to a new consolidated repository:
+>
+> 👉 **https://github.com/Cellular-Semantics/clara**
+>
+> This repository (`clara-agent`) is now archived and no longer maintained.  
+> Please use the new repo for all current code, documentation, and issues.
+
+
+
 ## **CLARA: CL Accuracy Reference Agent**
 
 [![Release](https://img.shields.io/github/v/release/Cellular-Semantics/clara-agent)](https://img.shields.io/github/v/release/Cellular-Semantics/clara-agent)
